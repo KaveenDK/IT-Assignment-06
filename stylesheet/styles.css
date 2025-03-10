@@ -1,0 +1,152 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('/assets/images/sky.jpg') no-repeat center center/cover;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.calculator {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 420px;
+}
+
+.display-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+#display {
+    height: 50px;
+    font-size: 1.5em;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(60, 60, 60, 0.85);
+    color: white;
+    text-align: right;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+    flex: 1;
+    margin-left: 8px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+button {
+    height: 60px;
+    font-size: 1.2em;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: scale(1.03);
+}
+
+.operator {
+    background-color: rgba(255, 222, 185, 0.8);
+    color: #333;
+}
+
+.operator:hover {
+    background-color: rgba(255, 200, 150, 0.9);
+}
+
+.equal {
+    background-color: rgba(125, 255, 255, 0.8);
+    color: #000;
+}
+
+.equal:hover {
+    background-color: rgba(90, 230, 230, 1);
+}
+
+.clear {
+    background-color: #ffbb99;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    height: 50px;
+    width: 60px;
+    margin-right: 8px;
+}
+
+.clear:hover {
+    background-color: #ff9966;
+}
+
+/* Responsive Design */
+@media (max-width: 425px) {
+    .calculator {
+        width: 90%;
+    }
+
+    button {
+        height: 50px;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .calculator {
+        width: 80%;
+    }
+
+    button {
+        height: 55px;
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .calculator {
+        width: 70%;
+    }
+
+    button {
+        height: 60px;
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .calculator {
+        width: 60%;
+    }
+
+    button {
+        height: 65px;
+        font-size: 1.3em;
+    }
+}
+
+@media (min-width: 1441px) {
+    .calculator {
+        width: 50%;
+    }
+
+    button {
+        height: 70px;
+        font-size: 1.4em;
+    }
+}

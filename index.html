@@ -5,31 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 06</title>
     <link rel="icon" href="/assets/images/img1.jpg" />
+    <link rel="stylesheet" href="/stylesheet/styles.css" />
   </head>
   <body>
     <div class="calculator">
-      <button class="clear">C</button>
-      <input type="text" id="display" disabled />
+      <div class="display-container">
+        <button class="clear">C</button>
+        <input type="text" id="display" disabled />
+      </div>
       <div class="buttons">
         <button>7</button>
         <button>8</button>
         <button>9</button>
-        <button>+</button>
+        <button class="functionbtn operator">+</button>
 
         <button>4</button>
         <button>5</button>
         <button>6</button>
-        <button>-</button>
+        <button class="functionbtn operator">-</button>
 
         <button>1</button>
         <button>2</button>
         <button>3</button>
-        <button>/</button>
+        <button class="functionbtn operator">/</button>
 
         <button>0</button>
         <button>.</button>
-        <button>=</button>
-        <button>*</button>
+        <button class="result equal">=</button>
+        <button class="functionbtn operator">*</button>
       </div>
     </div>
   </body>
