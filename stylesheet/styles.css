@@ -4,17 +4,17 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: url('/assets/images/sky.jpg') no-repeat center center/cover;
+    background: url('/assets/images/background_img.jpg') no-repeat center center/cover;
     font-family: 'Segoe UI', sans-serif;
 }
 
 .calculator {
-    background: rgba(0, 0, 0, 0.6);
+    background: transparent;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
     border: 2px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(1px);
     display: flex;
     flex-direction: column;
     width: 100%;
